@@ -25,6 +25,6 @@
  1073  grep -i ara spawannxs.txt
  1074  grep -i -w ara spawannxs.txt
  1075  grep -i -w -A 1 ara spawannxs.txt
- 1076  -n
+ 1076  ls -n
  1077  grep -i -w -v ara spawannxs.txt
  1078  history | tail -n 30 > For_Daniel_grep.txt
