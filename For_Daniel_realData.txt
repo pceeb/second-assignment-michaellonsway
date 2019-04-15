@@ -1,50 +1,50 @@
- 1132  cd introscicomp2014/
- 1133  ls
- 1134  cd u
- 1135  cd UNIX/
- 1136  cd Data/
- 1137  cd fasta/
- 1138  head -n3 407228326.fasta
- 1139  wc -l *.fasta
- 1140  tail -n+2 407228326.fasta
- 1141   tail -n+2 407228326.fasta | tr -d "\n"
- 1142  tail -n+2 407228326.fasta | tr -d "\n"
- 1143  tail -n+2 407228326.fasta | tr -d "\n" | wc -c
- 1144  cd ../
- 1145  ls
- 1146  cd f
- 1147  cd fasta/
- 1148  head -n3 407228326.fasta
- 1149  wc -l *.fasta
- 1150  tail -n+2 407228326.fasta
- 1151   tail -n+2 407228326.fasta | tr -d "\n"
- 1152   tail -n+2 407228326.fasta | tr -d "\n" | wc -c
- 1153   tail -n+2 407228412.fasta | tr -d "\n" | wc -c
- 1154  tail -n+2 E.coli.fasta | tr -d "\n" | wc -c
- 1155  tail -n+2 407228326.fasta | tr -d "\n" | grep -o "ATGTACATA"
- 1156  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o "ATGC" | wc -l
- 1157   tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [A,T] | wc -l
- 1158  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [G,C] | wc -l
- 1159  cd ../
- 1160  ls
- 1161  nano otoos10.txt 
- 1162  cp otoos10.txt darwin.txt
- 1163  ls
- 1164  nano darwin.txt 
- 1165  ls
- 1166  nano otoos10.txt 
- 1167  ls
- 1168  sort darwin.txt =evolution
- 1169  tr ' ' '\n' < darwin.txt | grep -c evolution
- 1170  tr ' ' '\n' < darwin.txt | grep -c evolved
- 1171  tr ' ' '\n' < darwin.txt | grep -c natural selection
- 1172  tr ' ' '\n' < darwin.txt | grep -c natural-selection
- 1173  tr ' ' '\n' < darwin.txt | grep -c natural_selection
- 1174  tr ' ' '\n' < darwin.txt | grep -c naturalselection
- 1175  tr ' ' '\n' < darwin.txt | grep -c Wallace
- 1176  ls
- 1177  cd Temperatures/
- 1178  ls
- 1179  cd ../
- 1180  ls
- 1181  history | tail -n 50 > For_Daniel_realData.txt
+  985  ls
+  986  cd Temperatures/
+  987  ls
+  988  grep -n 180[0-3] *.csv | grep -w "180[0-3]0101,TMAX"
+  989  grep -i -w 'TMAX' 1800.csv | grep "18000101 } cut -d "," -f 3 | sort tail -n
+  990  grep -i -w 'TMAX' 1800.csv | grep "18000101" | cut -d "," -f 3 | sort tail -n1
+  991  grep -i -w 'TMAX' 1800.csv | grep "18000101" | cut -d "," -f 3 | sort tail -n1
+  992  grep "18000101" 1800.csv | grep -i -w "TMAX" | cut -d "," -f4 | tail -n1
+  993  grep "18000205" 1800.csv | grep -i -w "TMAX" | cut -d "," -f4 | tail -n1
+  994  ls
+  995  cd introscicomp2014/
+  996  ls
+  997  cd UNIX/
+  998  Data/
+  999  ls
+ 1000  Data/
+ 1001  ls
+ 1002  cd Data/
+ 1003  ls
+ 1004  cd fasta/
+ 1005  ls
+ 1006  head -n3 407228326.fasta
+ 1007   wc -l *.fasta
+ 1008  tail -n+2 407228326.fasta
+ 1009  tail -n+2 407228326.fasta | tr -d "\n"
+ 1010  tail -n+2 407228326.fasta | tr -d "\n" | wc -c
+ 1011   tail -n+2 407228412.fasta | tr -d "\n" | wc -c
+ 1012  tail -n+2 E.coli.fasta | tr -d "\n" | wc -c
+ 1013  tail -n+2 407228326.fasta | tr -d "\n" | grep -o "ATGTACATA"
+ 1014  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o "ATGC" | wc -l
+ 1015  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [A,T] | wc -l
+ 1016  tail -n+2 E.coli.fasta | tr -d "\n" | grep -o [G,C] | wc -l
+ 1017  cd ../
+ 1018  ls
+ 1019  rm darwin.txt 
+ 1020  tail -n -13900 otoos10.txt | tail -n +264 > darwin.txt
+ 1021  wc -l darwin.txt 
+ 1022  grep -w "evolution" darwin.txt | wc -l
+ 1023  grep -w "evolved" darwin.txt | wc -l
+ 1024  grep -w "natural selection" darwin.txt | wc -l
+ 1025  grep -w "Wallace" darwin.txt | wc -l
+ 1026  touch commands.txt
+ 1027  nano commands.txt 
+ 1028  ls
+ 1029  cd Temperatures/
+ 1030  ls
+ 1031  grep -n 180[0-3] *.csv | grep -w "180[0-3]0101,TMAX"
+ 1032  grep "18000101" 1800.csv | grep -i -w "TMAX" | cut -d "," -f4 | tail -n1
+ 1033  ls
+ 1034  history | tail -n 50 > For_Daniel_realData.txt
